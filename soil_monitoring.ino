@@ -4,7 +4,7 @@
 #define BLYNK_PRINT Serial
 #include <WiFi.h>
 #include <BlynkSimpleEsp32.h>
-#define soilpin 2
+#define soilpin 32
 BlynkTimer timer;
  char auth[] = BLYNK_AUTH_TOKEN;
 char ssid[] = "your ssid";  // Enter your Wifi Username
