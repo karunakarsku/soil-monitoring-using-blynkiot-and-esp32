@@ -23,7 +23,7 @@ void loop()
 }
 void sendSensor()
 {
-  int value = analogRead(soilpinN);  // Read from the soil moisture sensor
+  int value = analogRead(soilpin);  // Read from the soil moisture sensor
   int soilmoisturepercentage = map(value,1200,1050,0,100);
   Blynk.virtualWrite(V0, soilmoisturepercentage);
   Serial.print("Soil Moisture : ");
